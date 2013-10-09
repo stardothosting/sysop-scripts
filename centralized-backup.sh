@@ -1,4 +1,6 @@
 # Dynamic backup script
+# Written by Kevin 
+# www.stardothosting.com
 
 currentmonth=`date "+%Y-%m-%d %H:%M:%S"`
 currentdate=`date "+%Y-%m-%d%H_%M_%S"`
@@ -11,8 +13,8 @@ backup_user="root"
 if [ "$#" -lt 2 ]
 then
         echo -e "\n\nUsage Syntax :"
-        echo -e "./backup.sh [hostname] [folder1] [folder2] [folder3]"
-        echo -e "Example : ./backup.sh hostname.com '/etc' '/usr/local/www' '/var/lib/mysql'\n\n"
+        echo -e "./centralized-backup.sh [hostname] [folder1] [folder2] [folder3]"
+        echo -e "Example : ./centralized-backup.sh hostname.com '/etc' '/usr/local/www' '/var/lib/mysql'\n\n"
         exit 1
 fi
 
